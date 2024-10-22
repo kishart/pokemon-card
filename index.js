@@ -13,7 +13,7 @@ async function fetchData() {
         const data = await response.json();
         const speciesUrl = data.species.url;
         const responseSpecies = await fetch(speciesUrl);
-        const speciesDate = await responseSpecies.json();
+        const speciesData = await responseSpecies.json();
 
         const pokemonSprite = document.getElementById("pokemonSprite");
         pokemonSprite.src = data.sprites.front_default;
@@ -34,7 +34,10 @@ async function fetchData() {
             pokeAbi.push(AbilityInfo.ability.name);
         });
         document.getElementById("pokeAbilities").textContent = pokeAbi.join(', ');
-        DocumentFragment.getElementById("pokeHabitat").textContent = speciesDate.habitat.name;
+        DocumentFragment.getElementById("pokeHabitat").textContent = speciesData.habitat.name;
+
+
+        DocumentFragment.getElementById("pokeCapture").textContent = speciesData.capture_rate.name;
 
 
 

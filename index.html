@@ -5,32 +5,7 @@
             Pokemon
         </title>
 
-        <style>
-           .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
-    text-align: center;
-}
-
-.image-container {
-    display: flex; align-items: center;  justify-content: center;
-    margin-bottom: 20px; /* Adds some spacing below the image */
-    
-}
-img{
-    height: 120px;
-    width: auto;
-}
-
-.search-container {
-    display: flex;
-    justify-content: flex-end; 
-    width: 100%; 
-    margin-right:80px;
-}
-        </style>
+<link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="container">
@@ -39,18 +14,25 @@ img{
             </div>
             <div class="search-container">
        <input type="text" id="pokemonName" placeholder="Enter Pokemon Name">
-       <button  id ="submit" onclick = "fetchData()">Fetch Pokemon</button><br> 
+       <!-- <button  id ="submit" onclick = "fetchData()">Fetch Pokemon</button><br>  -->
+       <ion-icon name="search"  id ="submit" onclick = "fetchData()"></ion-icon>
     </div>
+    <div class="info">
+        <div class="profile">
         <img src=" " alt="Pokemon Sprite" id="pokemonSprite" style="display:none">
+    </div>
         <p id ="pokeName"></p>
         <p id ="pokeType"></p>
         <p id ="pokeHabitat"></p>
+        <p id ="pokeCapture"></p>
         <p id ="pokeHeight"></p>
         <p id ="pokeWeight"></p>
         <p id ="pokeGrowth"></p>
         <p id="pokeAbilities"></p>          
-
+    </div>
 
         <script src = "index.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
