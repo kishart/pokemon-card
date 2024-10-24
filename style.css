@@ -1,11 +1,43 @@
-
-body{
-   background-color: rgb(205, 205, 252);
+body {
+  background-color: rgb(205, 205, 252);
 }
 .container {
-display: flex;
-flex-direction: column;
-align-items: center; 
-justify-content: center;
-text-align: center;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+img {
+  height: 90px;
+  width: auto;
+  padding: 10px 100px;
+  /* background-color: red; */
+}
+.search-container {
+  height: 90px;
+  width: auto;
+  padding: 10px 100px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-container input {
+  border-radius: 30px;
+  height: 30px;
+  width: 180px;
+  padding: 5px 20px;
+}
+.search-container .search {
+  margin-left: 5px;
+  font-size: 40px;
+  color: yellow;
+}
+
+#noPokemonMessage {
+  text-align: center;
+  margin-top: 15%;
+  font-size: 55px;
+  font-family:'Courier New', Courier, monospace;
 }

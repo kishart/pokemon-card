@@ -15,22 +15,28 @@
             <div class="search-container">
        <input type="text" id="pokemonName" placeholder="Enter Pokemon Name">
        <!-- <button  id ="submit" onclick = "fetchData()">Fetch Pokemon</button><br>  -->
-       <ion-icon name="search"  id ="submit" onclick = "fetchData()"></ion-icon>
+       <ion-icon name="search" class="search"  id ="submit" onclick = "fetchData()"></ion-icon>
     </div>
+    </div>
+ 
 
     <div id="pokemonCard" class="pokemon-card">
+        <h2 id="noPokemonMessage">Find a pokemon first</h2>
         <img id="pokemonSprite" src="" alt="Pokemon Sprite" style="display: none;">
-        <h2 id="pokeName">Pokemon Name</h2>
-        <p><strong>Type:</strong> <span id="pokeType"></span></p>
-        <p><strong>Height:</strong> <span id="pokeHeight"></span> decimetres</p>
-        <p><strong>Weight:</strong> <span id="pokeWeight"></span> hectograms</p>
-        <p><strong>Abilities:</strong> <span id="pokeAbilities"></span></p>
-        <p><strong>Habitat:</strong> <span id="pokeHabitat"></span></p>
-        <p><strong>Capture Rate:</strong> <span id="pokeCapture"></span></p>
-        <p><strong>Evolves From:</strong> <span id="pokeEvolvesFrom"></span></p>
-        <p><strong>Description:</strong> <span id="pokeFlavorText"></span></p>
-        <p><strong>Ability Descriptions:</strong> <span id="pokeAbilityDescriptions"></span></p>
+        <div id="pokemonDetails" style="display: none;">
+            <h2 id="pokeName"></h2>
+            <p><strong>Type:</strong> <span id="pokeType"></span></p>
+            <p><strong>Height:</strong> <span id="pokeHeight"></span> decimetres</p>
+            <p><strong>Weight:</strong> <span id="pokeWeight"></span> hectograms</p>
+            <p><strong>Abilities:</strong> <span id="pokeAbilities"></span></p>
+            <p><strong>Habitat:</strong> <span id="pokeHabitat"></span></p>
+            <p><strong>Capture Rate:</strong> <span id="pokeCapture"></span></p>
+            <p><strong>Evolves From:</strong> <span id="pokeEvolvesFrom"></span></p>
+            <p><strong>Description:</strong> <span id="pokeFlavorText"></span></p>
+            <p><strong>Ability Descriptions:</strong> <span id="pokeAbilityDescriptions"></span></p>
+        </div>
     </div>
+    
     
 
         <script src = "index.js"></script>
