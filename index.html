@@ -17,19 +17,21 @@
        <!-- <button  id ="submit" onclick = "fetchData()">Fetch Pokemon</button><br>  -->
        <ion-icon name="search"  id ="submit" onclick = "fetchData()"></ion-icon>
     </div>
-    <div class="info">
-        <div class="profile">
-        <img src=" " alt="Pokemon Sprite" id="pokemonSprite" style="display:none">
+
+    <div id="pokemonCard" class="pokemon-card">
+        <img id="pokemonSprite" src="" alt="Pokemon Sprite" style="display: none;">
+        <h2 id="pokeName">Pokemon Name</h2>
+        <p><strong>Type:</strong> <span id="pokeType"></span></p>
+        <p><strong>Height:</strong> <span id="pokeHeight"></span> decimetres</p>
+        <p><strong>Weight:</strong> <span id="pokeWeight"></span> hectograms</p>
+        <p><strong>Abilities:</strong> <span id="pokeAbilities"></span></p>
+        <p><strong>Habitat:</strong> <span id="pokeHabitat"></span></p>
+        <p><strong>Capture Rate:</strong> <span id="pokeCapture"></span></p>
+        <p><strong>Evolves From:</strong> <span id="pokeEvolvesFrom"></span></p>
+        <p><strong>Description:</strong> <span id="pokeFlavorText"></span></p>
+        <p><strong>Ability Descriptions:</strong> <span id="pokeAbilityDescriptions"></span></p>
     </div>
-        <p id ="pokeName"></p>
-        <p id ="pokeType"></p>
-        <p id ="pokeHabitat"></p>
-        <p id ="pokeCapture"></p>
-        <p id ="pokeHeight"></p>
-        <p id ="pokeWeight"></p>
-        <p id ="pokeGrowth"></p>
-        <p id="pokeAbilities"></p>          
-    </div>
+    
 
         <script src = "index.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

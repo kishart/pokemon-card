@@ -1,7 +1,6 @@
 
 body{
-    background-image: url('https://i.pinimg.com/736x/a1/07/53/a10753dffd33071ac5b2e7596d350b5e.jpg');
-    background-size: cover;
+   background-color: rgb(205, 205, 252);
 }
 .container {
 display: flex;
@@ -9,31 +8,4 @@ flex-direction: column;
 align-items: center; 
 justify-content: center;
 text-align: center;
-}
-
-.image-container {
-display: flex; align-items: center;  justify-content: center;
-margin-bottom: 20px; /* Adds some spacing below the image */
-
-}
-img{
-height: 120px;
-width: auto;
-}
-
-.search-container {
-display: flex;
-justify-content: flex-end; 
-width: 100%; 
-margin-right:80px;
-}
-
-.info{
-    background-color: pink;
-    display:flex;
-}
-
-.info .profile{
-    background-color: red;
-    margin:40px;
 }
