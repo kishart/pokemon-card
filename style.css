@@ -1,5 +1,6 @@
 body {
   background-color: rgb(205, 205, 252);
+  font-family: 'arial';
 }
 .container {
   display: flex;
@@ -32,7 +33,7 @@ img {
 .search-container .search {
   margin-left: 5px;
   font-size: 40px;
-  color: yellow;
+  color: red;
 }
 
 #noPokemonMessage {
@@ -40,4 +41,38 @@ img {
   margin-top: 15%;
   font-size: 55px;
   font-family:'Courier New', Courier, monospace;
+}
+
+
+.infop{
+  display:flex;
+} 
+
+h2{
+  text-align: center;
+  /* padding-top: 30px ; */
+}
+#pokeName{
+  font-size: 50px;
+  font-family: "Bungee Tint", sans-serif;
+
+}
+.pokemon-card{
+  border-radius:30px;
+  height: 500px;
+  
+}
+
+#pokemonDetails{
+  margin:30px;
+  border-style: dashed;
+ padding:30px;
+}
+
+#pokemonSprite{
+  height: 200px;
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }

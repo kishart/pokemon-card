@@ -1,46 +1,79 @@
 <!DOCTYPE html>
 <html>
-    <head lang="en">
-        <title>
-            Pokemon
-        </title>
+  <head lang="en">
+    <title>Pokemon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="image-container">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/640px-International_Pok%C3%A9mon_logo.svg.png" alt="pokemon">
-            </div>
-            <div class="search-container">
-       <input type="text" id="pokemonName" placeholder="Enter Pokemon Name">
-       <!-- <button  id ="submit" onclick = "fetchData()">Fetch Pokemon</button><br>  -->
-       <ion-icon name="search" class="search"  id ="submit" onclick = "fetchData()"></ion-icon>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/640px-International_Pok%C3%A9mon_logo.svg.png"
+          alt="pokemon"
+        />
+      </div>
+      <div class="search-container">
+        <input type="text" id="pokemonName" placeholder="Enter Pokemon Name" />
+        <!-- <button  id ="submit" onclick = "fetchData()">Fetch Pokemon</button><br>  -->
+        <ion-icon
+          name="search"
+          class="search"
+          id="submit"
+          onclick="fetchData()"
+        ></ion-icon>
+      </div>
     </div>
-    </div>
- 
 
     <div id="pokemonCard" class="pokemon-card">
-        <h2 id="noPokemonMessage">Find a pokemon first</h2>
-        <img id="pokemonSprite" src="" alt="Pokemon Sprite" style="display: none;">
-        <div id="pokemonDetails" style="display: none;">
-            <h2 id="pokeName"></h2>
-            <p><strong>Type:</strong> <span id="pokeType"></span></p>
-            <p><strong>Height:</strong> <span id="pokeHeight"></span> decimetres</p>
-            <p><strong>Weight:</strong> <span id="pokeWeight"></span> hectograms</p>
-            <p><strong>Abilities:</strong> <span id="pokeAbilities"></span></p>
-            <p><strong>Habitat:</strong> <span id="pokeHabitat"></span></p>
-            <p><strong>Capture Rate:</strong> <span id="pokeCapture"></span></p>
-            <p><strong>Evolves From:</strong> <span id="pokeEvolvesFrom"></span></p>
-            <p><strong>Description:</strong> <span id="pokeFlavorText"></span></p>
-            <p><strong>Ability Descriptions:</strong> <span id="pokeAbilityDescriptions"></span></p>
-        </div>
-    </div>
-    
-    
+      <h2 id="noPokemonMessage">Find a pokemon first</h2>
 
-        <script src = "index.js"></script>
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    </body>
+      <div class="infop">
+        <div class="imgname">
+          <img
+            id="pokemonSprite"
+            src=""
+            alt="Pokemon Sprite"
+            style="display: none; height: 350px; width: auto"
+          />
+
+          <h2 id="pokeName" ></h2>
+        </div>
+        <div id="pokemonDetails" style="display: none">
+          <p><strong>Type:</strong> <span id="pokeType"></span></p>
+          <p>
+            <strong>Height:</strong> <span id="pokeHeight"></span> decimetres
+          </p>
+          <p>
+            <strong>Weight:</strong> <span id="pokeWeight"></span> hectograms
+          </p>
+          <p><strong>Abilities:</strong> <span id="pokeAbilities"></span></p>
+          <p><strong>Habitat:</strong> <span id="pokeHabitat"></span></p>
+          <p><strong>Capture Rate:</strong> <span id="pokeCapture"></span></p>
+          <p>
+            <strong>Evolves From:</strong> <span id="pokeEvolvesFrom"></span>
+          </p>
+          <p><strong>Description:</strong> <span id="pokeFlavorText"></span></p>
+          <p>
+            <strong>Ability Descriptions:</strong>
+            <span id="pokeAbilityDescriptions"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
